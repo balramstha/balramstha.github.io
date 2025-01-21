@@ -4,18 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nisha kc</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="/src/output.css">
+    <meta name="keywords" content="nisha,full stack,web developer,">
+    <meta name="description" content="I am full stack developer">
+    <meta property="og:title" content="nishakc portfolio">
+    <meta property="og:description" content="I am full stack developer">
+    <meta property="og:image" content="/images/foto.jpg">
+    <link rel="shortcut icon" href="/images/foto.jpg" type="image/x-icon">
 
+    <link rel="stylesheet" href="/src/output.css">
 
     <style>
         .container {
             width: 86%;
             margin: auto;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 
@@ -23,15 +33,15 @@
 
 </head>
 
-<div>
-    <header class="bg-black">
+<body>
+    <header class="bg-black sticky top-0">
         <nav class="flex items-center justify-between font-bold text-white container py-4">
             <div>
                 <a href=""><span class="text-red-600">Nis</span><span>ha</span></a>
             </div>
             <div class="hidden md:flex gap-6">
-                <a class="text-red-700 underline" href="">Portfolio</a>
-                <a href="">Services</a>
+                <a class="text-red-700 underline" href="/">Portfolio</a>
+                <a href="#about">About</a>
                 <a href="">Experience</a>
                 <a href="">Projects</a>
                 <a href=""> Education</a>
@@ -51,27 +61,25 @@
         </nav>
     </header>
 
-    <!-- drawer init and toggle -->
-
-
     <!-- drawer component -->
     <div id="drawer-example"
         class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-black text-white w-80 dark:bg-gray-800"
         tabindex="-1" aria-labelledby="drawer-label">
-       <h5 class="font-bold text-xl">
-        menu
-       </h5>
+        <h5 class="font-bold text-xl">
+            menu
+        </h5>
         <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example"
             class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-             </svg>
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
             <span class="sr-only">Close menu</span>
         </button>
 
         <ul class="py-3 space-y-3 font-semibold">
             <li>
-                
+
                 <a class="text-red-700 underline" href="">Portfolio</a>
             </li>
             <li>
@@ -81,7 +89,7 @@
 
             <li>
                 <a href="">Experience</a>
-                
+
             </li>
             <li>
                 <a href="">Projects</a>
@@ -122,7 +130,8 @@
             </div>
         </div>
     </section>
-    <section class="bg-black py-8">
+
+    <section id="about" class="bg-black py-8">
         <div class="grid md:grid-cols-2 items-center container">
             <div class="w-[300px]">
                 <img class="rounded-full w-[600px] h-[400px] object-cover" src="/images/foto.jpg" alt="">
@@ -133,7 +142,8 @@
                 <div>
 
                     <h1 class="text-3xl font-bold text-white">About <span class="text-red-700">Me</span> <br>Frontend
-                        <span class="text-red-700">Developer</span></h1>
+                        <span class="text-red-700">Developer</span>
+                    </h1>
                     <p class="text-white">
                         A frontend developer is a software developer who creates the user interface(UI) and user
                         experience(UX) of websites and web applications.They use web languages like HTML,CSS and
@@ -147,6 +157,7 @@
             </div>
         </div>
     </section>
+
     <section>
         <div class="w-[80%] md:w-[50%] lg:w-[30%] m-auto space-y-3 py-10  ">
             <h1 class="text-center font-extrabold">Contact <span class="text-red-700">Me</span></h1>
@@ -204,8 +215,9 @@
 
 
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 
-    </body>
+</body>
 
 </html>
